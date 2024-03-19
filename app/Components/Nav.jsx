@@ -21,7 +21,7 @@ const Nav = () => {
             <button
              className = "p-4 text-2xl border-2 rounded-3xl bg-black text-white hover:text-black hover:bg-orange-500"
              onClick = {signOut}
-            >Sign Out</button>
+            >Sign Out hai</button>
         </div>):
         <button 
         className = "p-4 text-2xl border-2 rounded-3xl bg-black text-white hover:text-black hover:bg-orange-500"
