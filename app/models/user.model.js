@@ -16,4 +16,4 @@ const userSchema = new Schema({
     }
 })
 
-export const User = models.User || model("TestUser",userSchema)
+export const User = models.TestUser || model("TestUser",userSchema)

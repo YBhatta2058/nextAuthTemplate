@@ -22,13 +22,14 @@ const Nav = () => {
              className = "p-4 text-2xl border-2 rounded-3xl bg-black text-white hover:text-black hover:bg-orange-500"
              onClick = {signOut}
             >Sign Out hai</button>
-        </div>):
-        <button 
-        className = "p-4 text-2xl border-2 rounded-3xl bg-black text-white hover:text-black hover:bg-orange-500"
-        onClick = {signIn}
-        >
-            Sign In
-        </button>
+        </div>) :
+        <div>
+            {providers && Object.values(providers).map(provider => (
+                <button onClick = {()=>signIn(provider.id)} className = "p-4 bg-black m-4 text-white rounded-full hover:bg-orange-500 hover:text-white">
+                    Sign In with {provider.name}
+                </button>
+            ))}
+        </div>
     }
         
     </div>
